@@ -13,6 +13,7 @@ TABLES['contests'] = (
     " status varchar(50) NOT NULL,"
     " date varchar(50) NOT NULL,"
     " total_prizes double NOT NULL,"
+    " max_entries double NOT NULL,"
     " entries double NOT NULL, "
     " entry_fee double, "
     " positions_paid double, " 
@@ -39,6 +40,18 @@ TABLES['contestResults'] = (
     " u varchar(100),"
     " primary key(contest_id, contestant_name)"
     ")")
+
+def insertContest(contest_id, name, sport, status, date, total_prizes, max_entries, entries, entry_fee, is_guaranteed):
+    print 'contest_id: ', contest_id, 'name: ' , name, 'sport: ', sport, 'status: ' , status , ' date: ', date , ' total_prizes ', total_prizes, 'max_entries: ', max_entries, ' entries: ', entries, ' entry_fee: ', entry_fee, ' is guaranteed: ', is_guaranteed
+    data =(contest_id, str(name), str(sport), str(status), str(date), total_prizes, max_entries, entries, entry_fee, str(is_guaranteed))
+    insertCommand = ("INSERT IGNORE INTO contests(contest_id, name, sport, status, date, total_prizes, "
+                    "max_entries, entries, entry_fee, is_guaranteed) "
+                    "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)")
+    
+    cursor.execute(insertCommand, data)
+    connection.commit()   
+
+
     
 def createTables(cursor):
     for name, ddl in TABLES.iteritems():

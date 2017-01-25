@@ -5,10 +5,9 @@ Data Wrangling for gathering contest date from Draftkings.com  Useful for seeing
 python mysql connector : https://dev.mysql.com/downloads/connector/python/2.1.html
 
 # TODO
-- [ ] a task list item
 - [x] Create Database that can hold hockey contests
     - [ ] Long term: Database that can hold sports from any contest
-- [ ] Pull Daily Hockey contests and store
+- [x] Pull Daily Hockey contests and store
     - [ ] Long term: pull contests for all sports and store
 - [x] Create tables for holding hockey contest results
     - [ ] Additional Piece: Should we store results in a CSV form as well since contests are only available on DK website for a week or so?
