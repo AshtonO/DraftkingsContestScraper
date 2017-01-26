@@ -12,7 +12,7 @@ python mysql connector : https://dev.mysql.com/downloads/connector/python/2.1.ht
 - [x] Create tables for holding hockey contest results
     - [ ] Additional Piece: Should we store results in a CSV form as well since contests are only available on DK website for a week or so?
     - [ ] Long term: Create tables for other sports
-- [ ] Login to Draft kings so we can pull contest results from Hockey
+- [x] Login to Draft kings so we can pull contest results from Hockey
     - [ ] LT: Pull contest results from any sport
 
 
