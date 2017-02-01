@@ -1,3 +1,6 @@
+# DISCLAIMER
+I wrote this application as a side project to learn more about data analysis, data wrangling, and Python (I do not use it to actually enter lineups or play for money).  Using applications such as this to gather data from DraftKings is a direct violation of their Terms of Service.  I claim no responsibility for how anyone chooses to use this application.
+
 # DraftkingsContestScraper
 Data Wrangling for gathering contest date from Draftkings.com  Useful for seeing how you would have done in a given contest, and doing data analytics on other contestants.
 
